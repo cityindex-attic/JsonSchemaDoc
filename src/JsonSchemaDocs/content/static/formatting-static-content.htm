@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <title></title>
+</head>
+<body>
+    <h2>
+        Formatting Static Content</h2>
+    <pre id="pretty-print-example-js" class="prettyprint lang-js">
+    var foo = "bar";
+    </pre>
+    <pre id="pretty-print-example-generic" class="prettyprint">
+    var foo = "bar";
+    </pre>
+    <textarea id="cm-sample" >
+    var foo="bar";
+    var foo="bar";
+    var foo="bar";
+    var foo="bar";
+  
+    </textarea>
+    <script type="text/javascript">
+        CodeMirror.fromTextArea(document.getElementById("cm-sample"), { mode: "text/html", tabMode: "indent" });
+    </script>
+</body>
+</html>

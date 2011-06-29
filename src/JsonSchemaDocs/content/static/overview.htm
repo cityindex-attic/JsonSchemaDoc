@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    
+    <title></title>
+</head>
+<body>
+    <h2>Overview</h2>
+    <p>
+        The City Index Ltd. Trading API (hereafter referred to as the CIAPI) allows 
+        client UI applications to place FX, Spread bet and CFD trades with the City 
+        Index backend trading systems over the web.</p>
+    <p>
+        The CIAPI is composed of two broad areas; both of which can be accessed via 
+        HTTPS:</p>
+    <ul>
+        <li>HTTP web services</li>
+        <li>HTTP streaming</li>
+    </ul>
+    <h3>
+        HTTP web services</h3>
+    <p>
+        Request / response calls, initiated by the client UI application, are handled by 
+        the http web services.  These all follow a simplified REST pattern; encoding data in JSON.
+    </p>
+    <p>
+        Typically, requests for information that can be cached (available markets, 
+        historical prices, account history) are exposed via HTTP GET requests.&nbsp; 
+        Requests that change state (placing a trade, logging on) are performed using 
+        HTTP POST.</p>
+    <p>
+        Nearly all requests are authenticated by including a UserName and Session token 
+        in the headers or querystring of the GET / POST.</p>
+    <h3>
+        HTTP streaming</h3>
+    <p>
+        Real-time data is delivered from the backend system through the use of long lived or polling HTTP  
+        subscriptions to specific channels.</p>
+    <p>
+        Specifically, streams of real-time data (prices, news headlines, client margin) 
+        are exposed using the Lightstreamer protocol.</p>
+    <p>
+        All streams are authenticated using the same UserName and Session token used for 
+        a HTTP webservice call.</p>
+    <h3>
+        Client libraries</h3>
+    <p>
+        Most major UI languages have a corresponding client library, that simplifies 
+        access to the CIAPI.&nbsp; These handle common operations like serialising JSON 
+        to/from native objects, making calls and subscriptions, caching, throttling &amp; 
+        logging.</p>
+    </body>
+</html>

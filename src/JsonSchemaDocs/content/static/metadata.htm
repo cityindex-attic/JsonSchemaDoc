@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <title></title>
+</head>
+<body>
+    <h2>
+        MetaData</h2>
+    <p>
+        The City Index API is self documented via JSON Schema and Service Mapping Description (SMD) meta data.</p>
+    <p>
+        Combined, the JSON Schema and SMD meta data provide all relevant information regarding service methods and data types in 
+        a human and machine readable JSON format.</p>
+    <p>
+        Using this meta data as reference, one can confidently author or generate code that accesses the City Index API.</p>
+    <p>
+        An example in point is this application, the City Index API Explorer. It is a simple framework that consumes the City 
+        Index API JSON Schema and SMD meta data and dynamically renders documentation and sample javascript code.</p>
+    <p>
+        Another example is the CIAPI.JS client library. It is based upon the Dojo JavaScript framework which provides built-in 
+        support for SMD. </p>
+    <p>
+        City Index
+        SMD: <a href="" target="_blank" id="smd-link-base">filled at runtime</a>
+    </p>
+    <p>
+        City Index
+        JSON Schema: <a href="" target="_blank" id="json-link-base">filled at runtime</a>
+    </p>
+    <script type="text/javascript">
+        var target = JsonSchemaDocs.smd.target;
+        dojo.byId("smd-link-base").innerHTML = target + "smd";
+        dojo.attr("smd-link-base", "href", target + "smd");
+
+        dojo.byId("json-link-base").innerHTML = target + "schema";
+        dojo.attr("json-link-base", "href", target + "schema");        
+    </script>
+</body>
+</html>

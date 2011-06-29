@@ -1,0 +1,61 @@
+html {
+	cursor: text;
+}
+
+.editbox {
+	margin: .4em;
+	padding: 0;
+	font-family: Consolas, "Andale Mono WT" , "Andale Mono" , "Lucida Console" , "Lucida Sans Typewriter" , "DejaVu Sans Mono" , "Bitstream Vera Sans Mono" , "Liberation Mono" , "Nimbus Mono L" , Monaco, "Courier New" , Courier, monospace;
+	font-size: 10px;
+	color: black;
+	background-color: #D3D3D3;
+}
+
+pre.code, .editbox {
+	color: #000000;
+}
+
+.editbox p {
+	margin: 0;
+}
+
+span.js-punctuation {
+	color: #000000;
+}
+
+span.js-operator {
+	color: #000000;
+}
+
+span.js-keyword {
+	color: #0000ff;
+}
+
+span.js-atom {
+	color: #000000;
+}
+
+span.js-variable {
+	color: #000000;
+}
+
+span.js-variabledef {
+	color: black;
+}
+
+span.js-localvariable {
+	color: black;
+}
+
+span.js-property {
+	color: black;
+}
+
+span.js-comment {
+	color: #006400;
+}
+
+span.js-string {
+	color: #800000;
+}
+

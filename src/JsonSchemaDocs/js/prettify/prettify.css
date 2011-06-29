@@ -1,0 +1,134 @@
+/* Pretty printing styles. Used with prettify.js. */
+
+.str {
+	color: #800000;
+}
+.kwd {
+	color: #0000ff;
+}
+.com {
+	color: #0000ff;
+}
+.typ {
+	color: #0000ff;
+}
+.lit {
+	color: #800000;
+}
+.pun {
+	color: #000;
+}
+.pln {
+	color: #000;
+}
+.tag {
+	color: #000;
+}
+.atn {
+	color: #000;
+}
+.atv {
+	color: #000;
+}
+.dec {
+	color: #000;
+}
+pre.prettyprint {
+	padding: 2px;
+	border: 1px solid #888;
+	background-color: #f8f8f8;
+}
+
+div.prettyprint {
+	padding: 2px;
+	border: 1px solid #888;
+	background-color: #f8f8f8;
+}
+
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/* IE indents via margin-left */
+li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
+	list-style-type: none;
+}
+/* Alternate shading for lines */
+li.L1, li.L3, li.L5, li.L7, li.L9 {
+	background: #eee;
+}
+
+@media print {
+	.str {
+		color: #060;
+	}
+	.kwd {
+		color: #006;
+		font-weight: bold;
+	}
+	.com {
+		color: #600;
+		font-style: italic;
+	}
+	.typ {
+		color: #404;
+		font-weight: bold;
+	}
+	.lit {
+		color: #044;
+	}
+	.pun {
+		color: #440;
+	}
+	.pln {
+		color: #000;
+	}
+	.tag {
+		color: #006;
+		font-weight: bold;
+	}
+	.atn {
+		color: #404;
+	}
+	.atv {
+		color: #060;
+	}
+}
+
+.prettyprint {
+	font-family: Consolas, "Andale Mono WT" , "Andale Mono" , "Lucida Console" , "Lucida Sans Typewriter" , "DejaVu Sans Mono" , "Bitstream Vera Sans Mono" , "Liberation Mono" , "Nimbus Mono L" , Monaco, "Courier New" , Courier, monospace;
+	font-size: 10px;
+}
+
+
+#tabs {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+a.tab {
+	border-collapse: collapse;
+	border-style: solid solid none solid;
+	border-color: black;
+	border-width: 1px 1px 0px 1px;
+	background-color: silver;
+	padding: 2px 0.5em 0px 0.5em;
+	margin-top: 4px;
+	margin-right: 2px;
+	text-decoration: none;
+	float: left;
+}
+
+a.tab:hover {
+	border-color: black;
+	background-color: white;
+}
+
+.panel {
+	border: solid 1px black;
+	padding: 5px;
+	overflow: visible;
+}

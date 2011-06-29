@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    
+    <title></title>
+</head>
+<body>
+    <h2>Authentication</h2>
+    <p>Every request sent to the API must carry 2 pieces of authentication information:
+        <ul>
+            <li>UserName</li>
+            <li>Session token</li>
+        </ul>
+    </p>
+    <p>This can be provided either in the headers of the request:</p>
+<pre>
+Request Method:  GET
+Request Headers:
+    Session:A-SESSION-TOKEN
+    UserName:A-USERNAME
+Request URL: /news/?Category=UK
+</pre>
+    <p>or in the querystring (for clients that don&apos;t support headers)</p>
+<pre>
+Request Method:GET
+Request URL:/news/?Category=UK&UserName=A-USERNAME&Session=A-SESSION-TOKEN
+</pre>
+
+    <h2>Obtaining a session token</h2>
+    <p>A session token is created by submitting a UserName and Password to the <a href='#service.CreateSession'>CreateSession</a> service method</p>
+    <p>This session token is guarenteed to be valid for at least 20 minutes; and should be used for all CIAPI requests until the user closes your Trading UI application.</p>
+    <p>You application must be able to handle the token expiring; and prompt the user to create a new session token by re-entering their username and password.</p>
+	<p>You can manually <a href='#service.DeleteSession'> delete a session token</a>; or just leave it to be automatically deleted.</p>
+    <p>See <a href='#content.test-credentials'>Test Credentials</a> for information on how to obtain a username and password for the test environments.</p>
+</body>
+</html>

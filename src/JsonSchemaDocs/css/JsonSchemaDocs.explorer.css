@@ -1,0 +1,44 @@
+﻿body, html
+{
+	font-family: helvetica,arial,sans-serif;
+	font-size: 90%;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+.property-table
+{
+	border: 1px solid silver;
+}
+.property-table td
+{
+	vertical-align: top;
+	border-bottom: 1px solid silver;
+}
+.property-descriptor
+{
+	font-size: 9px;
+}
+.code-sample
+{
+	border: 1px solid silver;
+	padding: 5px;
+	margin: 5px;
+}
+.static-content
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*override dijit loading - they are annoying??*/
+.dijitContentPaneLoading
+{
+	visibility: hidden;
+	position: relative;
+}
+
+.json-link
+{
+	text-decoration: underline;
+}

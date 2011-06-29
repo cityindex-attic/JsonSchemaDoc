@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19C7E100-10FD-43C0-ACF2-3D766982D67D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CIAPI.docs</RootNamespace>
+    <AssemblyName>CIAPI.docs</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <SilverlightApplicationList>
+    </SilverlightApplicationList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>BasicCorrectnessRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <DocumentationFile>bin\CIAPI.docs.xml</DocumentationFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>BasicCorrectnessRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content\metadata\schema.js" />
+    <Content Include="content\metadata\smd.js" />
+    <Content Include="content\metadata\ssmd.js" />
+    <Content Include="content\samples\types\ApiActiveStopLimitOrderDTO.htm" />
+    <Content Include="content\samples\services\CreateSession.htm" />
+    <Content Include="content\static\!test.htm" />
+    <Content Include="css\JsonSchemaDocs.explorer.css" />
+    <Content Include="css\codemirror.css" />
+    <Content Include="css\css.css" />
+    <Content Include="css\docs.css" />
+    <Content Include="css\javascript.css" />
+    <Content Include="css\theme\images\logo.png" />
+    <Content Include="css\xml.css" />
+    <Content Include="css\jscolors.css" />
+    <Content Include="css\jsoncolors.css" />
+    <Content Include="css\prettify.css" />
+    <Content Include="css\theme\cityindex.css" />
+    <Content Include="css\theme\form\images\button.png" />
+    <Content Include="css\theme\form\images\buttonArrows.png" />
+    <Content Include="css\theme\form\images\button_grad_d.png" />
+    <Content Include="css\theme\form\images\checkboxAndRadioButtons_IE6.png" />
+    <Content Include="css\theme\form\images\checkboxRadioButtonStates.png" />
+    <Content Include="css\theme\form\images\commonFormArrows.png" />
+    <Content Include="css\theme\form\images\error.png" />
+    <Content Include="css\theme\form\images\formHighlight.png" />
+    <Content Include="css\theme\form\images\shadow.png" />
+    <Content Include="css\theme\form\images\sliderHorizontal.png" />
+    <Content Include="css\theme\form\images\sliderThumbs.png" />
+    <Content Include="css\theme\form\images\sliderVertical.png" />
+    <Content Include="css\theme\form\images\textBox_back.png" />
+    <Content Include="css\theme\images\calendarArrows.png" />
+    <Content Include="css\theme\images\calendarArrows8bit.png" />
+    <Content Include="css\theme\images\calendarContainerImages.png" />
+    <Content Include="css\theme\images\checkmarkNoBorder.gif" />
+    <Content Include="css\theme\images\checkmarkNoBorder.png" />
+    <Content Include="css\theme\images\commonHighlight.png" />
+    <Content Include="css\theme\images\dialogCloseIcon.png" />
+    <Content Include="css\theme\images\dialogCloseIcon8bit.png" />
+    <Content Include="css\theme\images\dnd.png" />
+    <Content Include="css\theme\images\loading.gif" />
+    <Content Include="css\theme\images\loadingAnimation.gif" />
+    <Content Include="css\theme\images\menuHighlight.png" />
+    <Content Include="css\theme\images\progressBarAnim.gif" />
+    <Content Include="css\theme\images\progressBarEmpty.png" />
+    <Content Include="css\theme\images\progressBarFull.png" />
+    <Content Include="css\theme\images\spriteArrows.png" />
+    <Content Include="css\theme\images\titleBar.png" />
+    <Content Include="css\theme\images\tooltip.png" />
+    <Content Include="css\theme\images\tooltip8bit.png" />
+    <Content Include="css\theme\images\treeExpandImages.png" />
+    <Content Include="css\theme\images\treeExpandImages8bit.png" />
+    <Content Include="css\theme\images\treeExpand_loading.gif" />
+    <Content Include="css\theme\layout\images\accordion-hover.png" />
+    <Content Include="css\theme\layout\images\accordion.png" />
+    <Content Include="css\theme\layout\images\splitterHorizontalHover.png" />
+    <Content Include="css\theme\layout\images\splitterVerticalHover.png" />
+    <Content Include="css\theme\layout\images\tab-bg.png" />
+    <Content Include="css\theme\layout\images\tabBottom.png" />
+    <Content Include="css\theme\layout\images\tabClose.png" />
+    <Content Include="css\theme\layout\images\tabLeft.png" />
+    <Content Include="css\theme\layout\images\tabNested.png" />
+    <Content Include="css\theme\layout\images\tabRight.png" />
+    <Content Include="css\theme\layout\images\tabTop.png" />
+    <Content Include="Default.htm" />
+    <Content Include="js\plugins-JsonSchemaDocs.BorderRenderer.js" />
+    <Content Include="js\JsonSchemaDocs2.js" />
+    <Content Include="js\blank.html" />
+    <Content Include="js\codemirror2\codemirror-compressed.js" />
+    <Content Include="js\codemirror2\codemirror.css" />
+    <Content Include="js\codemirror2\css.css" />
+    <Content Include="js\codemirror2\index.html" />
+    <Content Include="js\codemirror2\javascript.css" />
+    <Content Include="js\codemirror2\xml.css" />
+    <Content Include="js\excanvas\excanvas.compiled.js" />
+    <Content Include="js\excanvas\excanvas.js" />
+    <Content Include="js\json2.js" />
+    <Content Include="js\prettify\lang-apollo.js" />
+    <Content Include="js\prettify\lang-css.js" />
+    <Content Include="js\prettify\lang-hs.js" />
+    <Content Include="js\prettify\lang-lisp.js" />
+    <Content Include="js\prettify\lang-lua.js" />
+    <Content Include="js\prettify\lang-ml.js" />
+    <Content Include="js\prettify\lang-proto.js" />
+    <Content Include="js\prettify\lang-scala.js" />
+    <Content Include="js\prettify\lang-sql.js" />
+    <Content Include="js\prettify\lang-vb.js" />
+    <Content Include="js\prettify\lang-vhdl.js" />
+    <Content Include="js\prettify\lang-wiki.js" />
+    <Content Include="js\prettify\lang-yaml.js" />
+    <Content Include="js\prettify\prettify.css" />
+    <Content Include="js\prettify\prettify.js" />
+    <Content Include="css\table.css" />
+    <Content Include="js\plugins-JsonSchemaDocs.DefaultTOCGenerator.js" />
+    <Content Include="js\plugins-JsonSchemaDocs.DefaultContentRenderer.js" />
+    <Content Include="js\plugins-JsonSchemaDocs.SchemaExemplarGenerator.js" />
+    <Content Include="js\plugins-JsonSchemaDocs.SchemaInhertanceResolver.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="content\index.js" />
+    <None Include="js\codemirror2\LICENSE" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>10042</DevelopmentServerPort>
+          <DevelopmentServerVPath>/CIAPI.docs</DevelopmentServerVPath>
+          <IISUrl>http://localhost.api.com</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>http://localhost:8081</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>
+      rem - if $(ConfigurationName) == Release CD "$(ProjectDir)js\src\util\buildscripts\"
+      rem - if $(ConfigurationName) == Release ciapi.build.bat
+      rem - powershell.exe "cd $(ProjectDir)js\0.9.1; get-childitem . -filter _svn -force -recurse | remove-item -recurse -force"
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>
